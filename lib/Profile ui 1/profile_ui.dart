@@ -9,7 +9,7 @@ class ProfileUi1 extends StatelessWidget {
           iconTheme: IconThemeData(color: Colors.black),
           backgroundColor: Color.fromRGBO(249, 249, 249, 1),
           elevation: 0,
-          title: Icon(Icons.arrow_back, size: 25),
+          leading: Icon(Icons.arrow_back, size: 25),
           actions: [
             Padding(
                 padding: EdgeInsets.only(right: 10),
