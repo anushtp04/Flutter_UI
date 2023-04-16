@@ -1,6 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+void main(){
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.purple),
+      home: HotelDetailsUi(),
+    );
+  }
+}
+
 
 class HotelDetailsUi extends StatelessWidget {
   const HotelDetailsUi({Key? key}) : super(key: key);
@@ -25,7 +42,7 @@ class HotelDetailsUi extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/images/crowne_plaza.jpg"),
+                  image: AssetImage("assets/images/other/crowne_plaza.jpg"),
                   fit: BoxFit.cover),
               color: Colors.white,
             ),

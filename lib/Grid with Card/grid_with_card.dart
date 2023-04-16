@@ -2,6 +2,21 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'card_contents.dart';
 
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: GridWithCard(),
+    );
+  }
+}
+
+
 class GridWithCard extends StatelessWidget {
 
   @override
