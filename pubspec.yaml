@@ -34,6 +34,7 @@ dependencies:
   sliding_clipped_nav_bar: ^3.1.0+4
   font_awesome_flutter: ^10.4.0
   custom_navigation_bar: ^0.8.2
+  shared_preferences: ^2.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
