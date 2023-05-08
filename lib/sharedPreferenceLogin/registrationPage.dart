@@ -18,6 +18,15 @@ class _SharedPrefRegPageState extends State<SharedPrefRegPage> {
   var email = TextEditingController();
   var password = TextEditingController();
 
+  @override
+  void dispose() {
+    name.dispose();
+    phoneNumber.dispose();
+    email.dispose();
+    password.dispose();
+    super.dispose();
+  }
+
 
   @override
   Widget build(BuildContext context) {
