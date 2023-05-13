@@ -101,10 +101,6 @@ class _AdminPageSQLState extends State<AdminPageSQL> {
     },);
 
   }
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
